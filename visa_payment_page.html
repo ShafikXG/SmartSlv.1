@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Payment</title>
+    <link rel="stylesheet" href="assets/css/plugin/payment.css">
+       <!-- Stylesheets -->
+       <link rel="shortcut icon" href="https://smartsend.co/assets/images/logos/favicon.ico" type="image/x-icon">
+       <link rel="stylesheet" href="https://smartsend.co/assets/css/bootstrap.min.css">
+       <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+       <link rel="stylesheet" href="https://smartsend.co/assets/css/jquery-ui.css">
+       <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
+       <link rel="stylesheet" href="https://smartsend.co/assets/css/plugin/magnific-popup.css">
+       <link rel="stylesheet" href="https://smartsend.co/assets/css/plugin/slick.css">
+       <link rel="stylesheet" href="assets/css/arafat-font.css">
+       <link rel="stylesheet" href="https://smartsend.co/assets/css/plugin/animate.css">
+       <link rel="stylesheet" href="https://smartsend.co/assets/css/plugin/update.css">
+       <link rel="stylesheet" href="assets/css/styles.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body>
+
+    <div class="payment-container">
+        <h1>Visa Payment Page</h1>
+
+        <form id="visaPaymentForm" action="process_payment.php" method="post">
+            <label for="cardType">Card Type:</label>
+            <select id="cardType" name="paymentMethod" required>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+            <br>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required>
+            <br>
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+            <br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+            <br>
+            <input type="submit" value="Submit Payment">
+        </form>
+    </div>
+
+</body>
+</html>
